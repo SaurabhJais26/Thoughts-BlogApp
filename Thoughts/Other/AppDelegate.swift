@@ -5,6 +5,7 @@
 //  Created by Saurabh Jaiswal on 17/07/24.
 //
 
+import Purchases
 import Firebase
 import UIKit
 
@@ -16,6 +17,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         FirebaseApp.configure()
+        
+        Purchases.configure(withAPIKey: "appl_iPWNRirPTfkdTTFbNtDbXfmdWWM")
+        
+        IAPManager.shared.getSubscriptionStatus(completion: nil)
         
         return true
     }

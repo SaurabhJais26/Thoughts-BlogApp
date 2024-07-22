@@ -14,6 +14,7 @@
 		C0C0C71D2C4E42CB0071E052 /* PayWallHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C0C71C2C4E42CB0071E052 /* PayWallHeaderView.swift */; };
 		C0C0C71F2C4E44580071E052 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C0C71E2C4E44580071E052 /* Extensions.swift */; };
 		C0C0C7212C4E64A00071E052 /* PayWallDesciptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C0C7202C4E64A00071E052 /* PayWallDesciptionView.swift */; };
+		C0C0C7232C4E7BB60071E052 /* StoreKitTestCertificate.cer in Resources */ = {isa = PBXBuildFile; fileRef = C0C0C7222C4E7BB60071E052 /* StoreKitTestCertificate.cer */; };
 		C0CF50382C47A0A600FCDD12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CF50372C47A0A600FCDD12 /* AppDelegate.swift */; };
 		C0CF503A2C47A0A600FCDD12 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CF50392C47A0A600FCDD12 /* SceneDelegate.swift */; };
 		C0CF503C2C47A0A600FCDD12 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CF503B2C47A0A600FCDD12 /* HomeViewController.swift */; };
@@ -45,6 +46,7 @@
 		C0C0C71C2C4E42CB0071E052 /* PayWallHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayWallHeaderView.swift; sourceTree = "<group>"; };
 		C0C0C71E2C4E44580071E052 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		C0C0C7202C4E64A00071E052 /* PayWallDesciptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayWallDesciptionView.swift; sourceTree = "<group>"; };
+		C0C0C7222C4E7BB60071E052 /* StoreKitTestCertificate.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = StoreKitTestCertificate.cer; sourceTree = SOURCE_ROOT; };
 		C0CF50342C47A0A600FCDD12 /* Thoughts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Thoughts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0CF50372C47A0A600FCDD12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0CF50392C47A0A600FCDD12 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -195,6 +197,7 @@
 				C0CF50532C47A54E00FCDD12 /* ProfileViewController.swift */,
 				C0CF50552C47A5A900FCDD12 /* TabBarViewController.swift */,
 				C08BEA5E2C4D6B110084C9D9 /* Configuration.storekit */,
+				C0C0C7222C4E7BB60071E052 /* StoreKitTestCertificate.cer */,
 			);
 			path = "Core Tabs";
 			sourceTree = "<group>";
@@ -280,6 +283,7 @@
 				C0CF50412C47A0A700FCDD12 /* Assets.xcassets in Resources */,
 				C0CF50442C47A0A700FCDD12 /* Base in Resources */,
 				C08BEA562C4D35B80084C9D9 /* GoogleService-Info.plist in Resources */,
+				C0C0C7232C4E7BB60071E052 /* StoreKitTestCertificate.cer in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
