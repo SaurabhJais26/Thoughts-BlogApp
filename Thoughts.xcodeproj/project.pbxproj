@@ -10,6 +10,10 @@
 		C08BEA562C4D35B80084C9D9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C08BEA552C4D35B80084C9D9 /* GoogleService-Info.plist */; };
 		C08BEA582C4D45C30084C9D9 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08BEA572C4D45C30084C9D9 /* User.swift */; };
 		C08BEA5A2C4D45D20084C9D9 /* BlogPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08BEA592C4D45D20084C9D9 /* BlogPost.swift */; };
+		C08BEA5D2C4D62270084C9D9 /* PayWallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08BEA5C2C4D62270084C9D9 /* PayWallViewController.swift */; };
+		C0C0C71D2C4E42CB0071E052 /* PayWallHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C0C71C2C4E42CB0071E052 /* PayWallHeaderView.swift */; };
+		C0C0C71F2C4E44580071E052 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C0C71E2C4E44580071E052 /* Extensions.swift */; };
+		C0C0C7212C4E64A00071E052 /* PayWallDesciptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C0C7202C4E64A00071E052 /* PayWallDesciptionView.swift */; };
 		C0CF50382C47A0A600FCDD12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CF50372C47A0A600FCDD12 /* AppDelegate.swift */; };
 		C0CF503A2C47A0A600FCDD12 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CF50392C47A0A600FCDD12 /* SceneDelegate.swift */; };
 		C0CF503C2C47A0A600FCDD12 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CF503B2C47A0A600FCDD12 /* HomeViewController.swift */; };
@@ -36,6 +40,11 @@
 		C08BEA552C4D35B80084C9D9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C08BEA572C4D45C30084C9D9 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		C08BEA592C4D45D20084C9D9 /* BlogPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogPost.swift; sourceTree = "<group>"; };
+		C08BEA5C2C4D62270084C9D9 /* PayWallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayWallViewController.swift; sourceTree = "<group>"; };
+		C08BEA5E2C4D6B110084C9D9 /* Configuration.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = Configuration.storekit; sourceTree = "<group>"; };
+		C0C0C71C2C4E42CB0071E052 /* PayWallHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayWallHeaderView.swift; sourceTree = "<group>"; };
+		C0C0C71E2C4E44580071E052 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		C0C0C7202C4E64A00071E052 /* PayWallDesciptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayWallDesciptionView.swift; sourceTree = "<group>"; };
 		C0CF50342C47A0A600FCDD12 /* Thoughts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Thoughts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0CF50372C47A0A600FCDD12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0CF50392C47A0A600FCDD12 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +85,14 @@
 				928E4F7B0CE819580B36272E /* Pods-Thoughts.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		C08BEA5B2C4D60D50084C9D9 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				C08BEA5C2C4D62270084C9D9 /* PayWallViewController.swift */,
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 		C0CF502B2C47A0A500FCDD12 = {
@@ -131,6 +148,8 @@
 			isa = PBXGroup;
 			children = (
 				C0CF50422C47A0A700FCDD12 /* LaunchScreen.storyboard */,
+				C0C0C71C2C4E42CB0071E052 /* PayWallHeaderView.swift */,
+				C0C0C7202C4E64A00071E052 /* PayWallDesciptionView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -138,6 +157,7 @@
 		C0CF50502C47A49900FCDD12 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				C08BEA5B2C4D60D50084C9D9 /* Other */,
 				C0CF50672C47AEF300FCDD12 /* Core Tabs */,
 				C0CF50682C47AF3900FCDD12 /* Auth */,
 				C0CF50692C47AF4F00FCDD12 /* Posts */,
@@ -152,6 +172,7 @@
 				C0CF50402C47A0A700FCDD12 /* Assets.xcassets */,
 				C0CF50372C47A0A600FCDD12 /* AppDelegate.swift */,
 				C0CF50392C47A0A600FCDD12 /* SceneDelegate.swift */,
+				C0C0C71E2C4E44580071E052 /* Extensions.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -173,6 +194,7 @@
 				C0CF503B2C47A0A600FCDD12 /* HomeViewController.swift */,
 				C0CF50532C47A54E00FCDD12 /* ProfileViewController.swift */,
 				C0CF50552C47A5A900FCDD12 /* TabBarViewController.swift */,
+				C08BEA5E2C4D6B110084C9D9 /* Configuration.storekit */,
 			);
 			path = "Core Tabs";
 			sourceTree = "<group>";
@@ -311,10 +333,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C08BEA5A2C4D45D20084C9D9 /* BlogPost.swift in Sources */,
+				C0C0C71F2C4E44580071E052 /* Extensions.swift in Sources */,
+				C0C0C7212C4E64A00071E052 /* PayWallDesciptionView.swift in Sources */,
 				C0CF503C2C47A0A600FCDD12 /* HomeViewController.swift in Sources */,
 				C0CF50642C47A6C200FCDD12 /* AuthManager.swift in Sources */,
 				C0CF50622C47A6AF00FCDD12 /* DatabaseManager.swift in Sources */,
 				C0CF505A2C47A62D00FCDD12 /* SignUpViewController.swift in Sources */,
+				C0C0C71D2C4E42CB0071E052 /* PayWallHeaderView.swift in Sources */,
 				C0CF50382C47A0A600FCDD12 /* AppDelegate.swift in Sources */,
 				C0CF50582C47A61F00FCDD12 /* SignInViewController.swift in Sources */,
 				C08BEA582C4D45C30084C9D9 /* User.swift in Sources */,
@@ -325,6 +350,7 @@
 				C0CF503A2C47A0A600FCDD12 /* SceneDelegate.swift in Sources */,
 				C0CF505C2C47A64900FCDD12 /* ViewPostViewController.swift in Sources */,
 				C0CF50662C47A6D800FCDD12 /* StorageManager.swift in Sources */,
+				C08BEA5D2C4D62270084C9D9 /* PayWallViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

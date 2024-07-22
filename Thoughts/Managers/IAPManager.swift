@@ -3,7 +3,7 @@
 //  Thoughts
 //
 //  Created by Saurabh Jaiswal on 17/07/24.
-//
+// code.Saurabh.Thoughts.premium
 
 import Foundation
 import Purchases
@@ -13,7 +13,9 @@ final class IAPManager {
     
     private init() {}
     
-    func isPremium() {}
+    func isPremium() -> Bool {
+        return false
+    }
     
     func subscribe() {}
     
