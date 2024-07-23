@@ -31,6 +31,7 @@
 		C0CF50622C47A6AF00FCDD12 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CF50612C47A6AF00FCDD12 /* DatabaseManager.swift */; };
 		C0CF50642C47A6C200FCDD12 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CF50632C47A6C200FCDD12 /* AuthManager.swift */; };
 		C0CF50662C47A6D800FCDD12 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CF50652C47A6D800FCDD12 /* StorageManager.swift */; };
+		C0DBE9AB2C4F86F40093C6E5 /* SignInHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DBE9AA2C4F86F40093C6E5 /* SignInHeaderView.swift */; };
 		DE835C12F1E672E789F71963 /* Pods_Thoughts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 296C640A1E521EEA9F817B1D /* Pods_Thoughts.framework */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +66,7 @@
 		C0CF50612C47A6AF00FCDD12 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		C0CF50632C47A6C200FCDD12 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		C0CF50652C47A6D800FCDD12 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		C0DBE9AA2C4F86F40093C6E5 /* SignInHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +154,7 @@
 				C0CF50422C47A0A700FCDD12 /* LaunchScreen.storyboard */,
 				C0C0C71C2C4E42CB0071E052 /* PayWallHeaderView.swift */,
 				C0C0C7202C4E64A00071E052 /* PayWallDesciptionView.swift */,
+				C0DBE9AA2C4F86F40093C6E5 /* SignInHeaderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -345,6 +348,7 @@
 				C0CF505A2C47A62D00FCDD12 /* SignUpViewController.swift in Sources */,
 				C0C0C71D2C4E42CB0071E052 /* PayWallHeaderView.swift in Sources */,
 				C0CF50382C47A0A600FCDD12 /* AppDelegate.swift in Sources */,
+				C0DBE9AB2C4F86F40093C6E5 /* SignInHeaderView.swift in Sources */,
 				C0CF50582C47A61F00FCDD12 /* SignInViewController.swift in Sources */,
 				C08BEA582C4D45C30084C9D9 /* User.swift in Sources */,
 				C0CF50542C47A54E00FCDD12 /* ProfileViewController.swift in Sources */,
