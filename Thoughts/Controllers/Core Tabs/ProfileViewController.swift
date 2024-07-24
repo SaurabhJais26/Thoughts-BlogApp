@@ -36,7 +36,7 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
     required init?(coder: NSCoder) {
         fatalError()
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
@@ -117,7 +117,7 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     @objc private func didTapProfilePhoto() {
         guard let myEmail = UserDefaults.standard.string(forKey: "email"),
-        myEmail == currentEmail
+              myEmail == currentEmail
         else {
             return
         }
@@ -177,15 +177,29 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
     }
     
     // Table View
+    private var posts: [BlogPost] = []
+    
+    private func fetchPosts() {
+        
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        10
+        posts.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let post = posts[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         cell.textLabel?.text = "Blog post goes here!"
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        let vc = ViewPostViewController()
+        vc.title = posts[indexPath.row].title
+        
+        navigationController?.pushViewController(vc, animated: true)
     }
 }
 
