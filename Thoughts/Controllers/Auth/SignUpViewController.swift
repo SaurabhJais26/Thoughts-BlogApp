@@ -96,7 +96,7 @@ class SignUpViewController: UITabBarController {
         AuthManager.shared.signUp(email: email, password: password) { [weak self] success in
             if success {
                 // update database
-                let newUser = User(name: name, email: email, profilePictureUrl: nil)
+                let newUser = User(name: name, email: email, profilePictureRef: nil)
                 DatabaseManager.shared.insertUser(user: newUser) { inserted in
                     guard inserted else {
                         return
