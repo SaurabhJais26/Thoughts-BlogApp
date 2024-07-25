@@ -11,6 +11,8 @@
 		C08BEA582C4D45C30084C9D9 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08BEA572C4D45C30084C9D9 /* User.swift */; };
 		C08BEA5A2C4D45D20084C9D9 /* BlogPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08BEA592C4D45D20084C9D9 /* BlogPost.swift */; };
 		C08BEA5D2C4D62270084C9D9 /* PayWallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08BEA5C2C4D62270084C9D9 /* PayWallViewController.swift */; };
+		C0906BCF2C5229C900AC9424 /* PostPreviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0906BCE2C5229C900AC9424 /* PostPreviewTableViewCell.swift */; };
+		C0906BD12C5229EA00AC9424 /* PostHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0906BD02C5229EA00AC9424 /* PostHeaderTableViewCell.swift */; };
 		C0C0C71D2C4E42CB0071E052 /* PayWallHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C0C71C2C4E42CB0071E052 /* PayWallHeaderView.swift */; };
 		C0C0C71F2C4E44580071E052 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C0C71E2C4E44580071E052 /* Extensions.swift */; };
 		C0C0C7212C4E64A00071E052 /* PayWallDesciptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C0C7202C4E64A00071E052 /* PayWallDesciptionView.swift */; };
@@ -44,6 +46,8 @@
 		C08BEA592C4D45D20084C9D9 /* BlogPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogPost.swift; sourceTree = "<group>"; };
 		C08BEA5C2C4D62270084C9D9 /* PayWallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayWallViewController.swift; sourceTree = "<group>"; };
 		C08BEA5E2C4D6B110084C9D9 /* Configuration.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = Configuration.storekit; sourceTree = "<group>"; };
+		C0906BCE2C5229C900AC9424 /* PostPreviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostPreviewTableViewCell.swift; sourceTree = "<group>"; };
+		C0906BD02C5229EA00AC9424 /* PostHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostHeaderTableViewCell.swift; sourceTree = "<group>"; };
 		C0C0C71C2C4E42CB0071E052 /* PayWallHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayWallHeaderView.swift; sourceTree = "<group>"; };
 		C0C0C71E2C4E44580071E052 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		C0C0C7202C4E64A00071E052 /* PayWallDesciptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayWallDesciptionView.swift; sourceTree = "<group>"; };
@@ -99,6 +103,15 @@
 			path = Other;
 			sourceTree = "<group>";
 		};
+		C0906BCD2C52299A00AC9424 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C0906BCE2C5229C900AC9424 /* PostPreviewTableViewCell.swift */,
+				C0906BD02C5229EA00AC9424 /* PostHeaderTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		C0CF502B2C47A0A500FCDD12 = {
 			isa = PBXGroup;
 			children = (
@@ -151,6 +164,7 @@
 		C0CF504F2C47A49000FCDD12 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C0906BCD2C52299A00AC9424 /* Cells */,
 				C0CF50422C47A0A700FCDD12 /* LaunchScreen.storyboard */,
 				C0C0C71C2C4E42CB0071E052 /* PayWallHeaderView.swift */,
 				C0C0C7202C4E64A00071E052 /* PayWallDesciptionView.swift */,
@@ -347,10 +361,12 @@
 				C0CF50622C47A6AF00FCDD12 /* DatabaseManager.swift in Sources */,
 				C0CF505A2C47A62D00FCDD12 /* SignUpViewController.swift in Sources */,
 				C0C0C71D2C4E42CB0071E052 /* PayWallHeaderView.swift in Sources */,
+				C0906BD12C5229EA00AC9424 /* PostHeaderTableViewCell.swift in Sources */,
 				C0CF50382C47A0A600FCDD12 /* AppDelegate.swift in Sources */,
 				C0DBE9AB2C4F86F40093C6E5 /* SignInHeaderView.swift in Sources */,
 				C0CF50582C47A61F00FCDD12 /* SignInViewController.swift in Sources */,
 				C08BEA582C4D45C30084C9D9 /* User.swift in Sources */,
+				C0906BCF2C5229C900AC9424 /* PostPreviewTableViewCell.swift in Sources */,
 				C0CF50542C47A54E00FCDD12 /* ProfileViewController.swift in Sources */,
 				C0CF505E2C47A67300FCDD12 /* CreateNewPostViewController.swift in Sources */,
 				C0CF50602C47A69C00FCDD12 /* IAPManager.swift in Sources */,
