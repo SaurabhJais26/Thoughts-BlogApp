@@ -91,6 +91,7 @@ class SignUpViewController: UITabBarController {
                 let name = nameField.text, !name.isEmpty else {
             return
         }
+        HapticsManager.shared.vibrateForSelection()
         
         // Create user
         AuthManager.shared.signUp(email: email, password: password) { [weak self] success in

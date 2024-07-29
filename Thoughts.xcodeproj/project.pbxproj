@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C056ACB32C5788D700695D19 /* HapticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C056ACB22C5788D700695D19 /* HapticsManager.swift */; };
+		C056ACB72C579D5500695D19 /* ActivityIndicatorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C056ACB62C579D5500695D19 /* ActivityIndicatorManager.swift */; };
 		C08BEA562C4D35B80084C9D9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C08BEA552C4D35B80084C9D9 /* GoogleService-Info.plist */; };
 		C08BEA582C4D45C30084C9D9 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08BEA572C4D45C30084C9D9 /* User.swift */; };
 		C08BEA5A2C4D45D20084C9D9 /* BlogPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08BEA592C4D45D20084C9D9 /* BlogPost.swift */; };
@@ -41,6 +43,8 @@
 		296C640A1E521EEA9F817B1D /* Pods_Thoughts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Thoughts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		850DEEBEF284DAF8B6197962 /* Pods-Thoughts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Thoughts.debug.xcconfig"; path = "Target Support Files/Pods-Thoughts/Pods-Thoughts.debug.xcconfig"; sourceTree = "<group>"; };
 		928E4F7B0CE819580B36272E /* Pods-Thoughts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Thoughts.release.xcconfig"; path = "Target Support Files/Pods-Thoughts/Pods-Thoughts.release.xcconfig"; sourceTree = "<group>"; };
+		C056ACB22C5788D700695D19 /* HapticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsManager.swift; sourceTree = "<group>"; };
+		C056ACB62C579D5500695D19 /* ActivityIndicatorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorManager.swift; sourceTree = "<group>"; };
 		C08BEA552C4D35B80084C9D9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C08BEA572C4D45C30084C9D9 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		C08BEA592C4D45D20084C9D9 /* BlogPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogPost.swift; sourceTree = "<group>"; };
@@ -203,6 +207,8 @@
 				C0CF50612C47A6AF00FCDD12 /* DatabaseManager.swift */,
 				C0CF50632C47A6C200FCDD12 /* AuthManager.swift */,
 				C0CF50652C47A6D800FCDD12 /* StorageManager.swift */,
+				C056ACB22C5788D700695D19 /* HapticsManager.swift */,
+				C056ACB62C579D5500695D19 /* ActivityIndicatorManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -359,6 +365,7 @@
 				C0CF503C2C47A0A600FCDD12 /* HomeViewController.swift in Sources */,
 				C0CF50642C47A6C200FCDD12 /* AuthManager.swift in Sources */,
 				C0CF50622C47A6AF00FCDD12 /* DatabaseManager.swift in Sources */,
+				C056ACB72C579D5500695D19 /* ActivityIndicatorManager.swift in Sources */,
 				C0CF505A2C47A62D00FCDD12 /* SignUpViewController.swift in Sources */,
 				C0C0C71D2C4E42CB0071E052 /* PayWallHeaderView.swift in Sources */,
 				C0906BD12C5229EA00AC9424 /* PostHeaderTableViewCell.swift in Sources */,
@@ -373,6 +380,7 @@
 				C0CF50562C47A5A900FCDD12 /* TabBarViewController.swift in Sources */,
 				C0CF503A2C47A0A600FCDD12 /* SceneDelegate.swift in Sources */,
 				C0CF505C2C47A64900FCDD12 /* ViewPostViewController.swift in Sources */,
+				C056ACB32C5788D700695D19 /* HapticsManager.swift in Sources */,
 				C0CF50662C47A6D800FCDD12 /* StorageManager.swift in Sources */,
 				C08BEA5D2C4D62270084C9D9 /* PayWallViewController.swift in Sources */,
 			);

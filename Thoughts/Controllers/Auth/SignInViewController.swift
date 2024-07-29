@@ -86,13 +86,22 @@ class SignInViewController: UITabBarController {
     @objc func didTapSignIn() {
         guard let email = emailField.text, !email.isEmpty,
               let password = passwordField.text, !password.isEmpty else {
+            print("Email or password is empty")
             return
         }
+        HapticsManager.shared.vibrateForSelection()
+        print("Attempting to sign in with email: \(email)")
         
         AuthManager.shared.signIn(email: email, password: password) { [weak self] success in
             guard success else {
+                print("Sign in failed")
                 return
             }
+            
+            // Update subscription status for newly signed in user
+            
+            IAPManager.shared.getSubscriptionStatus(completion: nil)
+            print("Sign in successful")
             DispatchQueue.main.async {
                 UserDefaults.standard.set(email, forKey: "email")
                 let vc = TabBarViewController()

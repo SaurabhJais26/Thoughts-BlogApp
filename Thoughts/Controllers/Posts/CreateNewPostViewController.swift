@@ -122,6 +122,7 @@ class CreateNewPostViewController: UITabBarController {
             return
         }
         print("Starting post...")
+        ActivityIndicatorManager.shared.showIndicator("Posting...", vc: self)
         let newPostId = UUID().uuidString
         
         // Upload header image
@@ -131,11 +132,24 @@ class CreateNewPostViewController: UITabBarController {
             postId: newPostId
         ) { success in
             guard success else {
+                DispatchQueue.main.async {
+                    ActivityIndicatorManager.shared.hideIndicator(from: self)
+                    let alert = UIAlertController(title: "Failed to Post", message: "There was an error uploading the image.", preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "Dismiss", style: .cancel, handler: nil))
+                    self.present(alert, animated: true)
+                }
                 return
             }
             
             StorageManager.shared.downloadUrlForPostHeader(email: email, postId: newPostId) { url in
                 guard let headerUrl = url else {
+                    DispatchQueue.main.async {
+                        ActivityIndicatorManager.shared.hideIndicator(from: self)
+                        let alert = UIAlertController(title: "Failed to Post", message: "There was an error getting the image URL.", preferredStyle: .alert)
+                        alert.addAction(UIAlertAction(title: "Dismiss", style: .cancel, handler: nil))
+                        self.present(alert, animated: true)
+                        HapticsManager.shared.vibrate(for: .error)
+                    }
                     print("Failed to upload url for header")
                     return
                 }
@@ -150,13 +164,20 @@ class CreateNewPostViewController: UITabBarController {
                 )
                 
                 DatabaseManager.shared.insertBlogPost(blogPost: post, email: email) { [weak self] posted in
-                    guard posted else {
-                        print("Failed to post new Blog Article.")
-                        return
-                    }
+                    guard let self = self else { return }
                     
                     DispatchQueue.main.async {
-                        self?.didTapCancel()
+                        ActivityIndicatorManager.shared.hideIndicator(from: self)
+                        
+                        if posted {
+                            HapticsManager.shared.vibrate(for: .success)
+                            self.dismiss(animated: true, completion: nil)
+                        } else {
+                            HapticsManager.shared.vibrate(for: .error)
+                            let alert = UIAlertController(title: "Failed to Post", message: "There was an error posting your blog.", preferredStyle: .alert)
+                            alert.addAction(UIAlertAction(title: "Dismiss", style: .cancel, handler: nil))
+                            self.present(alert, animated: true)
+                        }
                     }
                 }
             }

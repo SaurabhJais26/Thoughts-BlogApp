@@ -15,13 +15,16 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
+        print("Setting up the window")
         let window = UIWindow(windowScene: windowScene)
         
         // TODO: Update VC to sign in vc if not signed in
         let vc: UIViewController
         if AuthManager.shared.isSignedIn {
+            print("User is signed in, setting TabBarViewController as root")
             vc = TabBarViewController()
         } else {
+            print("User is not signed in, setting SignInViewController as root")
             let signInVC = SignInViewController()
             signInVC.navigationItem.largeTitleDisplayMode = .always
             
