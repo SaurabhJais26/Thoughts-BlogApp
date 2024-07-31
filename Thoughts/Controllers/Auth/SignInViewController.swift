@@ -92,8 +92,12 @@ class SignInViewController: UITabBarController {
         HapticsManager.shared.vibrateForSelection()
         print("Attempting to sign in with email: \(email)")
         
+        ActivityIndicatorManager.shared.showIndicator("Signing In...", vc: self)
+        
         AuthManager.shared.signIn(email: email, password: password) { [weak self] success in
+            guard let self = self else { return }
             guard success else {
+                ActivityIndicatorManager.shared.hideIndicator(from: self)
                 print("Sign in failed")
                 return
             }
@@ -106,7 +110,8 @@ class SignInViewController: UITabBarController {
                 UserDefaults.standard.set(email, forKey: "email")
                 let vc = TabBarViewController()
                 vc.modalPresentationStyle = .fullScreen
-                self?.present(vc, animated: true)
+                self.present(vc, animated: true)
+                ActivityIndicatorManager.shared.hideIndicator(from: self)
             }
         }
     }

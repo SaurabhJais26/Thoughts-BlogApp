@@ -93,12 +93,15 @@ class SignUpViewController: UITabBarController {
         }
         HapticsManager.shared.vibrateForSelection()
         
+        ActivityIndicatorManager.shared.showIndicator("Signing Up...", vc: self)
         // Create user
         AuthManager.shared.signUp(email: email, password: password) { [weak self] success in
+            guard let self = self else { return }
             if success {
                 // update database
                 let newUser = User(name: name, email: email, profilePictureRef: nil)
                 DatabaseManager.shared.insertUser(user: newUser) { inserted in
+                    ActivityIndicatorManager.shared.hideIndicator(from: self)
                     guard inserted else {
                         return
                     }
@@ -107,10 +110,12 @@ class SignUpViewController: UITabBarController {
                     DispatchQueue.main.async {
                         let vc = TabBarViewController()
                         vc.modalPresentationStyle = .fullScreen
-                        self?.present(vc, animated: true)
+                        self.present(vc, animated: true)
                     }
                 }
             } else {
+                ActivityIndicatorManager.shared.hideIndicator(from: self)
+                HapticsManager.shared.vibrate(for: .error)
                 print("Failed to create account.")
             }
         }
